@@ -10,7 +10,7 @@ script:
   - export VERSION=`docker run -it udalov/standard standardrb -v | tr -d '\r'`;
   - docker build -t udalov/standard:$VERSION .
 
-  - docker run -v "$PWD:/app" -it udalov/standard standard test/test.rb
+  - docker run -v "$PWD:/app" -it udalov/standard standardrb test/test.rb
 
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
       docker push udalov/rubocop:latest;
