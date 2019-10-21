@@ -13,6 +13,6 @@ script:
   - docker run -v "$PWD:/app" -it udalov/standard standardrb test/test.rb
 
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-      docker push udalov/rubocop:latest;
-      docker push udalov/rubocop:$VERSION;
+      docker push udalov/standard:latest;
+      docker push udalov/standard:$VERSION;
     fi
