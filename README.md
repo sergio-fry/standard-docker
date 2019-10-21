@@ -15,8 +15,8 @@ $ docker run -it -v "$PWD:/app" udalov/standard standardrb
 Gitlab CI:
 
 ```yaml
-rubocop:
+standard:
   image: udalov/standard
   script:
-    - rubocop
+    - standardrb
 ```
