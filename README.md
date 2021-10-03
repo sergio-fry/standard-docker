@@ -10,14 +10,14 @@ Use these pre-installed standard builds for CI speedup
 Command line:
 
 ```bash
-$ docker run -it -v "$PWD:/app" udalov/standard standardrb
+$ docker run -it -v "$PWD:/app" ghcr.io/sergio-fry/standard-docker:master standardrb
 ```
 
 Gitlab CI:
 
 ```yaml
 standard:
-  image: udalov/standard
+  image: ghcr.io/sergio-fry/standard-docker:master
   script:
     - standardrb
 ```
