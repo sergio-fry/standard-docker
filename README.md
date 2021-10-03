@@ -2,7 +2,8 @@
 
 Use these pre-installed standard builds for CI speedup
 
-[![Build Status](https://travis-ci.org/sergio-fry/standard-docker.svg?branch=master)](https://travis-ci.org/sergio-fry/standard-docker)
+![Build Status](https://github.com/sergio-fry/standard-docker/actions/workflows/docker-publish.yml/badge.svg)
+
 
 ## Usage
 
